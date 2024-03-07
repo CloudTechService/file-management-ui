@@ -1,7 +1,18 @@
 :root {
     --skin: #F9F9F9;
     --brand-color: #0972BB;
-    --label:#374151;
+    --label: #374151;
+}
+
+#root {
+    background: #F9F9F9;
+    min-height: 100vh;
+}
+
+.pageContent {
+    width: calc(100% - 300px);
+    margin-left: auto;
+    transition: all ease .6s;
 }
 
 .input-field {
@@ -10,12 +21,105 @@
     min-width: 100%;
 }
 
-label{
+label {
     color: var(--label);
     font-weight: 500;
     font-size: 14px;
 }
-.paragraph{
+
+.paragraph {
     color: #4B5563;
     font-size: 14px;
+}
+
+.sidebar-ul {
+    padding-top: 1rem;
+
+}
+
+.sidebar-ul li {
+    list-style: none;
+    padding: 0.5rem;
+}
+
+/* header */
+.header {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* dashboard  */
+.sideBar-menu {
+    background-color: var(--brand-color);
+    color: #fff;
+    min-height: 100vh;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    padding: 20px 26px;
+    border-right: 1px solid #cccfd2;
+    transition: all ease .6s;
+}
+
+.sideBar-menu ul {
+    list-style: none;
+    padding-top: 1rem;
+    padding-left: 0;
+}
+
+.sideBar-menu ul li {
+    padding: 0.5rem;
+}
+
+.sideBar-menu .pro-item-content {
+    padding-left: 0.5rem;
+}
+
+.siteLogo {
+    display: flex;
+    align-items: center;
+
+}
+
+.siteLogo img {
+    filter: brightness(0) invert(1);
+    padding-right: 0.8rem;
+
+}
+
+.siteLogo span {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.file-txt {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.dash-container {
+    padding: 1rem;
+}
+
+.overview-card {
+    border: 1px solid #E5E7EB;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.approved-data {
+    color: #22C55E;
+}
+
+.failed-data{
+    color: #EE4444;
+}
+
+.overview-txt {
+    color: #6B7280;
 }

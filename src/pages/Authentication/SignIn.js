@@ -1,7 +1,7 @@
 import React from "react";
 import "../../assets/css/authentication.css";
 import SignInImg from "../../assets/images/sign-in-banner.svg";
-import FileIcon from "../../assets/images/files-icon.svg";
+import FileIcon from "../../assets/images/icons/files-icon.svg";
 
 function SignIn() {
   return (
@@ -11,12 +11,12 @@ function SignIn() {
           <div className="sign-in-container">
             {/* left side section */}
             <div className="me-5 ">
-              <img src={SignInImg} />
+              <img src={SignInImg} alt="sign in"/>
             </div>
             {/* right side section */}
             <div className="ms-5">
               <div className="d-flex">
-                <img src={FileIcon} />
+                <img src={FileIcon} alt="file icon"/>
                 <h2 className="signup-header">Files</h2>
               </div>
               <p className="paragraph mt-3">
