@@ -1,0 +1,149 @@
+/* dashboard  */
+.sideBar-menu {
+    background-color: var(--brand-color);
+    color: #fff;
+    min-height: 100vh;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    padding: 20px 26px;
+    border-right: 1px solid #cccfd2;
+    transition: all ease .6s;
+}
+
+.sideBar-menu ul {
+    list-style: none;
+    padding-top: 1rem;
+    padding-left: 0;
+}
+
+.sideBar-menu ul li {
+    padding: 0.5rem;
+}
+
+.sideBar-menu .pro-item-content {
+    padding-left: 0.5rem;
+}
+
+.siteLogo {
+    display: flex;
+    align-items: center;
+
+}
+
+.siteLogo img {
+    filter: brightness(0) invert(1);
+    padding-right: 0.8rem;
+
+}
+
+.siteLogo span {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.file-txt {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.dash-container {
+    padding: 1rem;
+}
+
+.overview-card {
+    border: 1px solid #E5E7EB;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.approved-data {
+    color: #22C55E;
+}
+
+.failed-data {
+    color: #EE4444;
+}
+
+.overview-txt {
+    color: #6B7280;
+}
+
+.expand {
+    color: var(--brand-color);
+}
+
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+}
+.file-pill{
+    background-color: #D5F0B1;
+    border-radius: 50px;
+    max-width: fit-content;
+    padding: 0.2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2E5C0E;
+}
+.files-dot{
+    background-color: #2E5C0E;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;   
+    margin-right: 0.5rem;
+}
+.api-pill{
+    background-color: #BEEBE7;
+    border-radius: 50px;
+    max-width: fit-content;
+    padding: 0.2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2B6E70;
+}
+.api-dot{
+    background-color: #2B6E70;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;   
+    margin-right: 0.5rem;
+
+}
+.email-pill{
+    background-color: #DEE0FA;
+    border-radius: 50px;
+    max-width: fit-content;
+    padding: 0.2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2B6E70;
+}
+.email-dot{
+    background-color: #3B45B0;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;   
+    margin-right: 0.5rem;
+
+}
+.card-bottom{
+
+    border-top: 1px solid #ccc;
+}
+
+.data-foot{
+     color: var(--brand-color);
+     display: flex;
+     align-items: center;
+     padding: 0.5rem 0.5rem;
+     border-right: 1px solid #ccc;
+}
