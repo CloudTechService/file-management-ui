@@ -1,0 +1,41 @@
+.modal {
+  padding-top: 9rem;
+}
+
+.modal-content {
+}
+
+.modal .heading-wrapper {
+  background-color: #f9fafb;
+}
+
+.modal .heading-wrapper .heading {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.modal .heading-wrapper p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.modal .row {
+  border-bottom: 1px solid #d1d5db;
+}
+
+.modal .row h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.modal .row p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #111827;
+}
+
+.card {
+  max-width: 500px;
+}

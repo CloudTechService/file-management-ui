@@ -1,65 +1,106 @@
 :root {
-    --skin: #F9F9F9;
-    --brand-color: #0972BB;
-    --label: #374151;
+  --skin: #f9f9f9;
+  --brand-color: #0972bb;
+  --label: #374151;
+  --brand-bg: #eef2ff;
+  --th-td-color: #6b7280;
+  --main-id: #111827;
 }
 
 #root {
-    background: #F9F9F9;
-    min-height: 100vh;
+  background: #f9f9f9;
+  min-height: 100vh;
 }
 
 .pageContent {
-    width: calc(100% - 300px);
-    margin-left: auto;
-    transition: all ease .6s;
+  width: calc(100% - 300px);
+  margin-left: auto;
+  transition: all ease 0.6s;
 }
 
 .input-field {
-    border-radius: 6px;
-    border: 1px solid #D1D5DB;
-    min-width: 100%;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  min-width: 100%;
 }
 
 label {
-    color: var(--label);
-    font-weight: 500;
-    font-size: 14px;
+  color: var(--brand-color);
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .paragraph {
-    color: #4B5563;
-    font-size: 14px;
+  color: #4b5563;
+  font-size: 14px;
 }
 
 .sidebar-ul {
-    padding-top: 1rem;
-
+  padding-top: 1rem;
 }
 
 .sidebar-ul li {
-    list-style: none;
-    padding: 0.5rem;
+  list-style: none;
+  padding: 0.5rem;
 }
 
 /* header */
 .header {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 table tr th,
-table tr td{
-    padding: 1rem;
-border-bottom: 1px solid #E5E7EB;
-
+table tr td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  color: var(--th-td-color);
 }
-table tr th{
-background-color: #F9FAFB;
-
+table tr th {
+  background-color: #f9fafb;
 }
-table{
-    border: 1px solid #E5E7EB;
+table {
+  border: 1px solid #e5e7eb;
+}
+
+/* table-container drop-shadow of datasetlogs folder */
+.table-container {
+  overflow-x: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 8px;
+}
+
+table tr .active {
+  font-weight: 600;
+  color: var(--main-id);
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-wrapper .icon-wrapper {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+.search-wrapper .input-field {
+  max-width: 245px;
+  height: 38px;
+}
+
+.search-wrapper ::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 10px;
+  color: #6b7280;
+}
+
+.Dropdown {
+  border-radius: 10px;
 }

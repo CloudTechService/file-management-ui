@@ -1,0 +1,282 @@
+.Dataset-wrapper h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.logs {
+  position: relative;
+}
+
+.logs::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  border-bottom: 1px solid #e5e7eb;
+  width: 100%;
+  left: 0;
+}
+
+.logs .ApiIcon span {
+  color: var(--brand-color);
+}
+.logs .ApiIcon {
+  position: relative;
+  text-decoration: none;
+}
+
+.logs .ApiIcon::after {
+  content: "";
+  position: absolute;
+  background-color: #338ac7;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+}
+
+.logs span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.dropdown {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+}
+
+th {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+td {
+  font-size: 14px;
+  font-weight: ;
+  line-height: 20px;
+}
+
+.download {
+  color: var(--brand-color);
+}
+
+/* .box {
+  border-top: 1px solid #e5e7eb;
+} */
+
+.box button {
+  border: 1px solid #d1d5db;
+  height: 38px;
+  width: 43px;
+  background-color: #ffffff;
+}
+
+.box .active {
+  color: #0972bb;
+  border: 1px solid #0972bb;
+}
+
+/* DataSetLogsAll Starts */
+.MicIcon span {
+  color: var(--brand-color);
+}
+.logs .MicIcon {
+  position: relative;
+  text-decoration: none;
+  color: #338ac7;
+}
+
+.logs .MicIcon::after {
+  content: "";
+  position: absolute;
+  background-color: #338ac7;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+}
+
+/* .incoming-wrapper,
+.select-date-status-wrapper {
+  position: relative;
+} */
+
+/* .image-wrapper {
+  position: absolute;
+  top: 9px;
+  right: 13px;
+} */
+
+.incoming-wrapper,
+.select-date-status-wrapper {
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid #d1d5db;
+}
+
+.incoming-wrapper button {
+  background-color: var(--brand-bg);
+  border: 1px solid var(--brand-color);
+  color: var(--brand-color);
+}
+/* .incoming-wrapper ::placeholder {
+  color: var(--brand-color);
+} */
+
+/* File Details */
+.files-content-wrapper button {
+  background-color: var(--brand-bg);
+  border-radius: 6px;
+  border: 2px solid var(--brand-color);
+  height: 35px;
+  font-size: 14px;
+}
+.files-content-wrapper p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.files-content-wrapper h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* dataset-record-wrapper starts*/
+.dataset-content-wrapper p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.dataset-content-wrapper h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.dataset-content-wrapper button {
+  background-color: var(--brand-bg);
+  border-radius: 6px;
+  border: 2px solid var(--brand-color);
+  height: 35px;
+  font-size: 14px;
+}
+.dataset-record-wrapper .logs .all-content-wrapper p {
+  background-color: var(--brand-bg);
+  border-radius: 10px;
+  padding: 0px 10px;
+  border: none;
+}
+
+.dataset-record-wrapper .logs .primary-member-wrapper p {
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  padding: 0px 10px;
+  border: none;
+}
+
+.dataset-record-wrapper .box .all {
+}
+/* .dataset-record-wrapper .logs {
+  border-bottom: 1px solid #e5e7eb;
+} */
+
+.dataset-record-wrapper .logs .all-content-wrapper {
+  position: relative;
+  text-decoration: none;
+  color: #338ac7;
+  border: none;
+}
+
+.dataset-record-wrapper .logs .all-content-wrapper::after {
+  content: "";
+  position: absolute;
+  background-color: #338ac7;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+}
+
+.active span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.all .primary-member-wrapper,
+p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+/* dataset-record-wrapper ends */
+
+/* dataset-record-primary-wrapper starts */
+.dataset-record-primary-wrapper .logs .all-content-wrapper p {
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  padding: 0px 10px;
+  border: none;
+}
+
+.dataset-record-primary-wrapper .logs .primary-member-wrapper p {
+  background-color: var(--brand-bg);
+  border-radius: 10px;
+  padding: 0px 10px;
+  border: none;
+}
+
+.dataset-record-primary-wrapper .logs .primary-member-wrapper {
+  position: relative;
+  text-decoration: none;
+  color: #338ac7;
+  border: none;
+}
+
+.dataset-record-primary-wrapper .logs .primary-member-wrapper::after {
+  content: "";
+  position: absolute;
+  background-color: #338ac7;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+}
+
+/* dataset-record-primary-wrapper ends */
+
+.additional-information-wrapper {
+  /* background-color: #646568; */
+}
+.Elevate-Audi-wrapper {
+  /* border: 1px solid #d1d5db; */
+  max-width: 509px;
+}
+
+/* .Elevate-Audi-wrapper ul li {
+  border-radius: 8px;
+} */
+
+.Elevate-Audi-wrapper ul .files {
+  background-color: #d5f0b1;
+  max-width: ;
+  width: ;
+}
+
+.Elevate-Audi-wrapper ul .api {
+  background-color: #beebe7;
+}
+
+.Elevate-Audi-wrapper ul .email {
+  background-color: #dee0fa;
+}
+
+/* .Elevate-Audi-wrapper table {
+  border-collapse: collapse;
+} */

@@ -1,21 +1,20 @@
 import React from "react";
 import "../../assets/css/datasetlogs.css";
 
-import MicIcon from "../../assets/images/icons/mic.svg";
+import MicBlueIcon from "../../assets/images/icons/micblue.svg";
 import FilesIcon from "../../assets/images/icons/files.svg";
-import ApiBlueIcon from "../../assets/images/icons/apiblue.svg";
+import ApiIcon from "../../assets/images/icons/api.svg";
 import EmailIcon from "../../assets/images/icons/email.svg";
 import LeftIcon from "../../assets/images/icons/Chevron left.svg";
 import RightIcon from "../../assets/images/icons/Chevron right.svg";
+import DropdownIcon from "../../assets/images/icons/Chevron down.svg";
 
 import { MdOutlineFileDownload } from "react-icons/md";
-import { BsArrowUpCircle } from "react-icons/bs";
 import { BsArrowDownCircle } from "react-icons/bs";
 import { IoMdSearch } from "react-icons/io";
+
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
-
-import Dropdown from "react-bootstrap/Dropdown";
 
 function DataSetLog() {
   return (
@@ -23,10 +22,10 @@ function DataSetLog() {
       <div className="Dataset-wrapper p-3">
         <h3>Dataset Logs</h3>
 
-        <div className=" logs d-flex justify-content-between flex-wrap mt-4 mb-4">
-          <div className=" d-flex flex-wrap ">
-            <div className="d-flex me-5 gap-1">
-              <img src={MicIcon} alt="" />
+        <div className="logs d-flex justify-content-between flex-wrap mt-4 mb-4">
+          <div className="d-flex flex-wrap ">
+            <div className="MicIcon d-flex me-5 gap-1">
+              <img src={MicBlueIcon} alt="" />
               <span className="pt-2">All</span>
             </div>
 
@@ -35,8 +34,8 @@ function DataSetLog() {
               <span className="pt-2">Files</span>
             </div>
 
-            <div className="ApiIcon d-flex me-5 gap-1">
-              <img src={ApiBlueIcon} alt="" />
+            <div className=" d-flex me-5 gap-1">
+              <img src={ApiIcon} alt="" />
               <span className="pt-2">APIs</span>
             </div>
 
@@ -56,36 +55,38 @@ function DataSetLog() {
                   height: "20px",
                   width: "20px",
                 }}
-              />
+              />{" "}
             </div>
             {/* <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /> */}
           </div>
         </div>
 
         <div className="d-flex flex-wrap mb-3">
-          <Dropdown className="me-4">
-            <Dropdown.Toggle variant="" id="dropdown-basic">
-              Select Dataset Type
-            </Dropdown.Toggle>
+          <div className="incoming-wrapper me-4">
+            <button
+              class="btn "
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Incoming
+              <img src={DropdownIcon} alt="" className="ms-5" />
+            </button>
+          </div>
 
-            <Dropdown.Menu className="mt-2">
-              <Dropdown.Item href="#/action-1">Incoming</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Outgoing</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-
-          <Dropdown className="">
-            <Dropdown.Toggle variant="" id="dropdown-basic">
-              Select Dataset Status
-            </Dropdown.Toggle>
-
-            <Dropdown.Menu className="mt-2">
-              <Dropdown.Item href="#/action-1">All</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Processed</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Not Processed</Dropdown.Item>
-              <Dropdown.Item href="#/action-4">Deleted</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
+          <div className="select-date-status-wrapper">
+            <button
+              class="btn "
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Select Date Status
+              <img src={DropdownIcon} alt="" className="ms-1" />
+            </button>
+          </div>
         </div>
 
         <div className="table-container">
@@ -129,18 +130,16 @@ function DataSetLog() {
             <tr>
               <td className="active">File_elascicat_2022.xls</td>
               <td>
-                <div className="mb-1">
-                  <BsArrowUpCircle
-                    style={{ color: "#EE4444", marginRight: "6px" }}
-                  />
-                  Out
-                </div>
+                <BsArrowDownCircle
+                  style={{ color: "#188A42", marginRight: "6px" }}
+                />
+                In
               </td>
               <td>0 times</td>
               <td>02/02/2022</td>
               <td>25</td>
               <td>20mb</td>
-              <td>API</td>
+              <td>Files</td>
               <td>Processed</td>
               <td className="high-light">
                 <MdOutlineFileDownload
@@ -153,20 +152,18 @@ function DataSetLog() {
             <tr>
               <td className="active">File_elascicat_2022.xls</td>
               <td>
-                <div className="mb-1">
-                  <BsArrowDownCircle
-                    style={{ color: "#188A42", marginRight: "6px" }}
-                  />
-                  In
-                </div>
+                <BsArrowDownCircle
+                  style={{ color: "#188A42", marginRight: "6px" }}
+                />
+                In
               </td>
               <td>0 times</td>
               <td>02/02/2022</td>
               <td>1202</td>
               <td>120kb</td>
-              <td>API</td>
+              <td>Email</td>
               <td>Processed</td>
-              <td className="high-light">
+              <td className=" high-light">
                 <MdOutlineFileDownload
                   style={{ marginRight: "4px", height: "20px", width: "20px" }}
                 />
